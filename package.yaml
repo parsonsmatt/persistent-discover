@@ -26,7 +26,7 @@ dependencies:
 - dlist
 - directory
 - persistent >= 2.13.0.0
-- template-haskell
+- template-haskell >= 2.16.0.0
 - file-embed
 
 ghc-options:
