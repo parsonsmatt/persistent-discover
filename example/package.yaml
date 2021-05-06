@@ -1,0 +1,49 @@
+name:                example
+version:             0.1.0.0
+github:              "parsonsmatt/example"
+license:             BSD3
+author:              "Matt Parsons"
+maintainer:          "parsonsmatt@gmail.com"
+copyright:           "Matt Parsons"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+default-extensions:
+    - TemplateHaskell
+    - QuasiQuotes
+    - GeneralizedNewtypeDeriving
+    - UndecidableInstances
+    - ImportQualifiedPost
+    - BlockArguments
+    - TypeFamilies
+    - FlexibleInstances
+    - MultiParamTypeClasses
+    - OverloadedStrings
+    - GeneralizedNewtypeDeriving
+    - DerivingStrategies
+    - ImportQualifiedPost
+    - TypeFamilies
+    - GADTs
+    - DerivingStrategies
+    - StandaloneDeriving
+    - DataKinds
+    - FlexibleInstances
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/parsonsmatt/example#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- persistent
+- persistent-discover
+
+library:
+  source-dirs: ./src

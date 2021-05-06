@@ -1,0 +1,43 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 9f468e2b24f79cbe28edf414db3499bce8310fae5871a284a921f7e402c42ff9
+
+name:           example
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/parsonsmatt/example#readme>
+homepage:       https://github.com/parsonsmatt/example#readme
+bug-reports:    https://github.com/parsonsmatt/example/issues
+author:         Matt Parsons
+maintainer:     parsonsmatt@gmail.com
+copyright:      Matt Parsons
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/parsonsmatt/example
+
+library
+  exposed-modules:
+      Lib
+      Models.All
+      Models.Bar
+      Models.Foo
+  other-modules:
+      Paths_example
+  hs-source-dirs:
+      ./src
+  default-extensions: TemplateHaskell QuasiQuotes GeneralizedNewtypeDeriving UndecidableInstances ImportQualifiedPost BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
+  build-depends:
+      base >=4.7 && <5
+    , persistent
+    , persistent-discover
+  default-language: Haskell2010
