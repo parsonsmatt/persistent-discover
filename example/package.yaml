@@ -15,7 +15,6 @@ default-extensions:
     - QuasiQuotes
     - GeneralizedNewtypeDeriving
     - UndecidableInstances
-    - ImportQualifiedPost
     - BlockArguments
     - TypeFamilies
     - FlexibleInstances
@@ -23,7 +22,6 @@ default-extensions:
     - OverloadedStrings
     - GeneralizedNewtypeDeriving
     - DerivingStrategies
-    - ImportQualifiedPost
     - TypeFamilies
     - GADTs
     - DerivingStrategies
