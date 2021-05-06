@@ -15,7 +15,6 @@ jobs:
         cabal: ["3.4"]
         ghc:
           - "8.10.3"
-          - "9.0"
     env:
       CONFIG: "--enable-tests"
     steps:
