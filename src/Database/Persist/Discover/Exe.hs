@@ -104,18 +104,6 @@ discoverModels (Source src) (Destination dest) = do
         output =
             renderFile input
 
-    putStrLn $ render do
-        renderLine do
-            "Source:      "
-            fromString src
-        renderLine do
-            "Destination: "
-            fromString dest
-        indent 4 do
-            for_ (amfModuleImports input) \fp ->
-                fromString $ show fp
-
-    putStrLn output
     writeFile dest output
 
 -- | Returns a list of relative paths to all files in the given directory.
