@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: adc8302efbc19197b48ac2225d6435e2ec7c8a17b07ecd0cdbcbcbcd6569dfa8
+-- hash: 3125c69e285dc4bde1c55934cac93ad7af5329820db485f2c8648b242f688342
 
 name:           persistent-discover
 version:        0.1.0.0
@@ -36,21 +36,7 @@ library
       Paths_persistent_discover
   hs-source-dirs:
       ./src
-  default-extensions:
-      BlockArguments
-      TypeFamilies
-      FlexibleInstances
-      MultiParamTypeClasses
-      OverloadedStrings
-      GeneralizedNewtypeDeriving
-      DerivingStrategies
-      ImportQualifiedPost
-      TypeFamilies
-      GADTs
-      DerivingStrategies
-      StandaloneDeriving
-      DataKinds
-      FlexibleInstances
+  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall
   build-depends:
       base >=4.12 && <5
@@ -69,21 +55,7 @@ executable persistent-discover
       Paths_persistent_discover
   hs-source-dirs:
       app
-  default-extensions:
-      BlockArguments
-      TypeFamilies
-      FlexibleInstances
-      MultiParamTypeClasses
-      OverloadedStrings
-      GeneralizedNewtypeDeriving
-      DerivingStrategies
-      ImportQualifiedPost
-      TypeFamilies
-      GADTs
-      DerivingStrategies
-      StandaloneDeriving
-      DataKinds
-      FlexibleInstances
+  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.12 && <5
@@ -105,21 +77,7 @@ test-suite persistent-discover-test
       Paths_persistent_discover
   hs-source-dirs:
       test
-  default-extensions:
-      BlockArguments
-      TypeFamilies
-      FlexibleInstances
-      MultiParamTypeClasses
-      OverloadedStrings
-      GeneralizedNewtypeDeriving
-      DerivingStrategies
-      ImportQualifiedPost
-      TypeFamilies
-      GADTs
-      DerivingStrategies
-      StandaloneDeriving
-      DataKinds
-      FlexibleInstances
+  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.12 && <5
