@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: beb60f0f12601248d9597a0406df93aeaa418ca65e99695b8ba7cca5abe8715d
+-- hash: d596b3a08e0a9d135aa1b3594f36c4beb9438a43b7ab4eaebc07dec1c7293117
 
 name:           persistent-discover
 version:        0.1.0.0
@@ -39,7 +39,7 @@ library
   default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall
   build-depends:
-      base >=4.7 && <5
+      base >=4.12 && <5
     , directory
     , dlist
     , file-embed
@@ -58,7 +58,7 @@ executable persistent-discover
   default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      base >=4.12 && <5
     , directory
     , dlist
     , file-embed
@@ -80,7 +80,7 @@ test-suite persistent-discover-test
   default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      base >=4.12 && <5
     , directory
     , dlist
     , file-embed

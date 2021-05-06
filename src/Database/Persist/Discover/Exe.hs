@@ -61,9 +61,6 @@ renderLine :: Render -> Render
 renderLine action =
     fromString $ mconcat $ DList.toList $ execState (unRender action) mempty
 
-current :: Render' (DList String)
-current = Render get
-
 newtype Render' a = Render { unRender :: State (DList String) a }
     deriving newtype
         (Functor, Applicative, Monad)
