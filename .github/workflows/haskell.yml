@@ -17,12 +17,12 @@ jobs:
           - "8.6.5"
           - "8.8.4"
           - "8.10.3"
-
+          - "9.0"
     env:
       CONFIG: "--enable-tests"
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-haskell@v1.1.4
+      - uses: haskell/actions/setup
         id: setup-haskell-cabal
         with:
           ghc-version: ${{ matrix.ghc }}
