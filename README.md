@@ -44,5 +44,5 @@ This generates a module `Models.All` that exports a single item: `allEntities`,
 which is a `[EntityDef]` and can be used by `migrateModels` to properly perform
 migrations.
 
-You'll need to add `persistent-discover` to the build-depends on your cabal file
+You'll need to add `persistent-discover` to the `build-tool-depends` on your cabal file
 for this to work.
