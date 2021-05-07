@@ -1,5 +1,4 @@
-resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/10.yaml
+resolver: lts-17.10
 
 extra-deps:
 - persistent-2.13.0.0

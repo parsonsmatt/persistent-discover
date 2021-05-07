@@ -36,7 +36,7 @@ import System.FilePath
 import Control.Monad.State
 import Data.String
 import Data.DList (DList(..))
-import Data.DList qualified as DList
+import qualified Data.DList as DList
 import Data.Foldable (for_)
 import System.Directory
 import Data.List

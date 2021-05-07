@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d596b3a08e0a9d135aa1b3594f36c4beb9438a43b7ab4eaebc07dec1c7293117
+-- hash: 367368542f35766d0f032885ef0642293c2d78cc493e4ed99fdd2d71c68d68d2
 
 name:           persistent-discover
 version:        0.1.0.0
@@ -36,7 +36,7 @@ library
       Paths_persistent_discover
   hs-source-dirs:
       ./src
-  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
+  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall
   build-depends:
       base >=4.12 && <5
@@ -46,7 +46,7 @@ library
     , filepath
     , mtl
     , persistent >=2.13.0.0
-    , template-haskell
+    , template-haskell >=2.16.0.0
   default-language: Haskell2010
 
 executable persistent-discover
@@ -55,7 +55,7 @@ executable persistent-discover
       Paths_persistent_discover
   hs-source-dirs:
       app
-  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
+  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.12 && <5
@@ -66,7 +66,7 @@ executable persistent-discover
     , mtl
     , persistent >=2.13.0.0
     , persistent-discover
-    , template-haskell
+    , template-haskell >=2.16.0.0
   default-language: Haskell2010
 
 test-suite persistent-discover-test
@@ -77,8 +77,10 @@ test-suite persistent-discover-test
       Paths_persistent_discover
   hs-source-dirs:
       test
-  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies ImportQualifiedPost TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
+  default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-tool-depends:
+      hspec-discover:hspec-discover
   build-depends:
       base >=4.12 && <5
     , directory
@@ -90,5 +92,5 @@ test-suite persistent-discover-test
     , mtl
     , persistent >=2.13.0.0
     , persistent-discover
-    , template-haskell
+    , template-haskell >=2.16.0.0
   default-language: Haskell2010

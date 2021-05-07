@@ -15,7 +15,6 @@ default-extensions:
     - QuasiQuotes
     - GeneralizedNewtypeDeriving
     - UndecidableInstances
-    - ImportQualifiedPost
     - BlockArguments
     - TypeFamilies
     - FlexibleInstances
@@ -23,7 +22,6 @@ default-extensions:
     - OverloadedStrings
     - GeneralizedNewtypeDeriving
     - DerivingStrategies
-    - ImportQualifiedPost
     - TypeFamilies
     - GADTs
     - DerivingStrategies
@@ -39,6 +37,9 @@ default-extensions:
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
 description:         Please see the README on GitHub at <https://github.com/parsonsmatt/example#readme>
+
+build-tools:
+  - persistent-discover
 
 dependencies:
 - base >= 4.7 && < 5

@@ -1,5 +1,8 @@
 # persistent-discover
 
+![build status](https://github.com/parsonsmatt/persistent-discover/actions/workflows/haskell.yml/badge.svg)
+
+
 Supports automatic discovery of your
 [`persistent`](https://hackage.haskell.org/package/persistent) models.
 
