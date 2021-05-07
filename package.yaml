@@ -73,3 +73,5 @@ tests:
     - persistent-discover
     - hspec
     - hspec-discover
+    build-tools:
+    - hspec-discover

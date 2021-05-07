@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 407a59cf243811b4ba9a7c94510e13ad0f35751e9675afee0f139d630458f4c9
+-- hash: 367368542f35766d0f032885ef0642293c2d78cc493e4ed99fdd2d71c68d68d2
 
 name:           persistent-discover
 version:        0.1.0.0
@@ -79,6 +79,8 @@ test-suite persistent-discover-test
       test
   default-extensions: BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-tool-depends:
+      hspec-discover:hspec-discover
   build-depends:
       base >=4.12 && <5
     , directory
