@@ -171,7 +171,7 @@ mkModulePieces
     :: FilePath
     -> [String]
 mkModulePieces fp =
-    fmap dropSuffixes $ dropWhile isLowerFirst $ filter noDots $ splitDirectories fp
+    fmap dropSuffixes $ reverse $ takeWhile (not . isLowerFirst) $ reverse $ filter noDots $ splitDirectories fp
   where
     noDots x =
         "." /= x && ".." /= x
