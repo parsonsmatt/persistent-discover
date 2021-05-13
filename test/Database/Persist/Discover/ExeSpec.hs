@@ -53,4 +53,13 @@ spec = do
                         , modulePath =
                             exPath
                         }
-
+        it "pathToModule absolute path" do
+            let absPath = "/Users/user/Code/project/src/Foo/Bar.hs"
+            pathToModule absPath
+                `shouldBe`
+                    Just Module
+                        { moduleName =
+                            "Foo.Bar"
+                        , modulePath =
+                            absPath
+                        }
