@@ -1,7 +1,7 @@
 resolver: lts-17.10
 
 extra-deps:
-- persistent-2.13.0.0
+- persistent-2.13.1.1
 - lift-type-0.1.0.1
 
 packages:

@@ -1,3 +1,5 @@
+{-# LANGUAGE CPP #-}
+
 -- |
 --
 -- @since 0.1.0.0
@@ -23,7 +25,11 @@ findPersistentModelFiles
 findPersistentModelFiles root = do
     projectRoot <- makeRelativeToProject root
     files <- runIO $ filter isPersistentModelFile <$> getFilesRecursive projectRoot
+#if MIN_VERSION_template_haskell(2,17,0)
+    examineCode $ liftTyped files
+#else
     liftTyped files
+#endif
   where
     isPersistentModelFile filename =
         case stripSuffix ".persistentmodels" filename of
