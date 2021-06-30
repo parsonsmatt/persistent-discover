@@ -2,6 +2,11 @@
 
 ## Unreleased changes
 
+## 0.1.0.4
+
+- Fix a bug where non-Haskell files would be picked up and imported in the
+  generated file. [#]()
+
 ## 0.1.0.3
 
 - Remove embarrasing lib module.

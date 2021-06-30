@@ -34,6 +34,13 @@ spec = do
                 `shouldBe`
                     ["Foo", "Bar"]
 
+        it "does not eat non-hs files" do
+            let
+                mdFile =
+                    "src/Foo/README.md"
+            mkModulePieces mdFile
+                `shouldBe`
+                    []
 
     describe "pathToModule" do
         let
