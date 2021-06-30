@@ -2,6 +2,10 @@
 
 ## Unreleased changes
 
+## 0.1.0.3
+
+- Remove embarrasing lib module.
+
 ## 0.1.0.2
 
 - Support GHC 9 [#3](https://github.com/parsonsmatt/persistent-discover/pull/3)
