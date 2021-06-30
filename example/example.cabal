@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 89047e7671b76ddb6872ea1a6878f4310718c84849c50eb007489ed8e0592b0f
+-- hash: 8ebf0b60aaefba788b2ab4e6f073c5f16d292e2f75f335cfed81488a2c48124f
 
 name:           example
 version:        0.1.0.0
@@ -35,7 +35,24 @@ library
       Paths_example
   hs-source-dirs:
       ./src
-  default-extensions: TemplateHaskell QuasiQuotes GeneralizedNewtypeDeriving UndecidableInstances BlockArguments TypeFamilies FlexibleInstances MultiParamTypeClasses OverloadedStrings GeneralizedNewtypeDeriving DerivingStrategies TypeFamilies GADTs DerivingStrategies StandaloneDeriving DataKinds FlexibleInstances
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      GeneralizedNewtypeDeriving
+      UndecidableInstances
+      BlockArguments
+      TypeFamilies
+      FlexibleInstances
+      MultiParamTypeClasses
+      OverloadedStrings
+      GeneralizedNewtypeDeriving
+      DerivingStrategies
+      TypeFamilies
+      GADTs
+      DerivingStrategies
+      StandaloneDeriving
+      DataKinds
+      FlexibleInstances
   build-tool-depends:
       persistent-discover:persistent-discover
   build-depends:

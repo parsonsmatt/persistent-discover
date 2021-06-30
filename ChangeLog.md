@@ -2,6 +2,10 @@
 
 ## Unreleased changes
 
+## 0.1.0.2
+
+- Support GHC 9 [#3](https://github.com/parsonsmatt/persistent-discover/pull/3)
+
 ## 0.1.0.1
 
 - Fix behavior where uppercase directories (eg on Mac OS) would cause incorrect
