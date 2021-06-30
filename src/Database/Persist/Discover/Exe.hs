@@ -170,20 +170,25 @@ data Module = Module
 mkModulePieces
     :: FilePath
     -> [String]
-mkModulePieces fp =
-    fmap dropSuffixes $ reverse $ takeWhile (not . isLowerFirst) $ reverse $ filter noDots $ splitDirectories fp
+mkModulePieces fp = do
+    let
+        extension =
+            takeExtension fp
+    guard (extension == ".hs" || extension == ".lhs")
+    reverse
+        . takeWhile (not . isLowerFirst)
+        . reverse
+        . filter noDots
+        . splitDirectories
+        . dropExtension
+        $ fp
   where
     noDots x =
         "." /= x && ".." /= x
-    dropSuffixes str =
-        fromMaybe str
-            $ stripSuffix ".hs" str
-            <|> stripSuffix ".lhs" str
 
 isLowerFirst :: String -> Bool
 isLowerFirst [] = True
 isLowerFirst (c:_) = isLower c
-
 
 pathToModule
     :: FilePath
@@ -192,7 +197,8 @@ pathToModule file = do
     case mkModulePieces file of
         [] ->
             empty
-        x:xs ->  do
+        x : xs ->  do
+            guard $ all isValidModuleName (x : xs)
             pure (Module (intercalate "." (x:xs)) file)
 
 -- | Returns True if the given string is a valid task module name.
