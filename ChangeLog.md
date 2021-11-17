@@ -4,7 +4,7 @@
 
 ## 0.1.0.5
 
-- Fix a bug where `TemplateHaskell` pragma was not added. [#]()
+- Fix a bug where `TemplateHaskell` pragma was not added. [#6](https://github.com/parsonsmatt/persistent-discover/pull/6)
 
 ## 0.1.0.4
 
