@@ -7,3 +7,5 @@ extra-deps:
 packages:
 - .
 - example/
+- ../discover-instances
+- ../some-dict-of

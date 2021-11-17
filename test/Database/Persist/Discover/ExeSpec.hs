@@ -1,11 +1,34 @@
 module Database.Persist.Discover.ExeSpec where
 
+import qualified Data.Text as Text
 import Test.Hspec
 import Database.Persist.Discover.Exe
 import System.FilePath
 
 spec :: Spec
 spec = do
+    describe "renderFile" do
+        it "should have TemplateHaskell pragma" do
+            let rendered  =
+                    renderFile AllModelsFile
+                        { amfModuleBase =
+                            Module
+                                { moduleName = "Asdf"
+                                , modulePath = "src/Asdf.hs"
+                                }
+                        , amfModuleImports =
+                            []
+                        }
+                firstLines =
+                    unlines . take 4 . lines $ rendered
+                expected =
+                    render do
+                        "{-# LINE 1 \"Asdf\" #-}"
+                        "{-# LANGUAGE TemplateHaskell #-}"
+                        ""
+                        "module Asdf where"
+            firstLines `shouldBe` expected
+
     describe "Render" do
         it "works" do
             shouldBe

@@ -2,10 +2,14 @@
 
 ## Unreleased changes
 
+## 0.1.0.5
+
+- Fix a bug where `TemplateHaskell` pragma was not added. [#6](https://github.com/parsonsmatt/persistent-discover/pull/6)
+
 ## 0.1.0.4
 
 - Fix a bug where non-Haskell files would be picked up and imported in the
-  generated file. [#]()
+  generated file. [#4](https://github.com/parsonsmatt/persistent-discover/pull/4)
 
 ## 0.1.0.3
 
