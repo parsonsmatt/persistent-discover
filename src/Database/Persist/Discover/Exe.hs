@@ -126,6 +126,7 @@ renderFile amf = render do
         "{-# LINE 1 "
         fromString $ show modName
         " #-}"
+    "{-# LANGUAGE TemplateHaskell #-}"
     ""
     renderLine do
         "module "

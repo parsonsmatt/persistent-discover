@@ -28,6 +28,9 @@ dependencies:
 - persistent >= 2.13.0.0
 - template-haskell >= 2.16.0.0
 - file-embed
+- discover-instances
+- some-dict-of
+- text
 
 ghc-options:
     - -Wall

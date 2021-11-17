@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 02c55b7bab0afd35d762f5a1f8f30fbab6f0b6c13966145570b5572c2773bdc5
+-- hash: 70e0abec0333022d7bebf1309003385e89b17edbca9f5a474563412285fd737b
 
 name:           persistent-discover
 version:        0.1.0.4
@@ -53,12 +53,15 @@ library
   build-depends:
       base >=4.12 && <5
     , directory
+    , discover-instances
     , dlist
     , file-embed
     , filepath
     , mtl
     , persistent >=2.13.0.0
+    , some-dict-of
     , template-haskell >=2.16.0.0
+    , text
   default-language: Haskell2010
 
 executable persistent-discover
@@ -85,13 +88,16 @@ executable persistent-discover
   build-depends:
       base >=4.12 && <5
     , directory
+    , discover-instances
     , dlist
     , file-embed
     , filepath
     , mtl
     , persistent >=2.13.0.0
     , persistent-discover
+    , some-dict-of
     , template-haskell >=2.16.0.0
+    , text
   default-language: Haskell2010
 
 test-suite persistent-discover-test
@@ -122,6 +128,7 @@ test-suite persistent-discover-test
   build-depends:
       base >=4.12 && <5
     , directory
+    , discover-instances
     , dlist
     , file-embed
     , filepath
@@ -130,5 +137,7 @@ test-suite persistent-discover-test
     , mtl
     , persistent >=2.13.0.0
     , persistent-discover
+    , some-dict-of
     , template-haskell >=2.16.0.0
+    , text
   default-language: Haskell2010
