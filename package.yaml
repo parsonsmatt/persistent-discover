@@ -37,18 +37,19 @@ ghc-options:
 
 default-extensions:
     - BlockArguments
-    - TypeFamilies
+    - DataKinds
+    - DerivingStrategies
+    - DerivingStrategies
     - FlexibleInstances
+    - FlexibleInstances
+    - GADTs
+    - GeneralizedNewtypeDeriving
     - MultiParamTypeClasses
     - OverloadedStrings
-    - GeneralizedNewtypeDeriving
-    - DerivingStrategies
-    - TypeFamilies
-    - GADTs
-    - DerivingStrategies
     - StandaloneDeriving
-    - DataKinds
-    - FlexibleInstances
+    - TypeFamilies
+    - TypeFamilies
+    - TypeOperators
 
 library:
   source-dirs: ./src
