@@ -16,6 +16,8 @@ jobs:
         ghc:
           - "8.10.3"
           - "9.0.1"
+          - "9.2"
+          - "9.4"
     env:
       CONFIG: "--enable-tests"
     steps:
