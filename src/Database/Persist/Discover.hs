@@ -9,7 +9,7 @@ module Database.Persist.Discover
 
 import Database.Persist.Discover.Exe (getFilesRecursive, stripSuffix)
 import Language.Haskell.TH
-import Language.Haskell.TH.Syntax
+import Language.Haskell.TH.Syntax hiding (makeRelativeToProject)
 import Data.FileEmbed
 
 -- | Returns a list of all files with the @.persistentmodels@ suffix.

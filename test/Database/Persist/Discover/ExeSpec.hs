@@ -1,6 +1,5 @@
 module Database.Persist.Discover.ExeSpec where
 
-import qualified Data.Text as Text
 import Test.Hspec
 import Database.Persist.Discover.Exe
 import System.FilePath

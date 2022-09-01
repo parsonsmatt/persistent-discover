@@ -1,5 +1,5 @@
 name:                persistent-discover
-version:             0.1.0.5
+version:             0.1.0.6
 github:              "parsonsmatt/persistent-discover"
 license:             BSD3
 author:              "Matt Parsons"
@@ -37,18 +37,19 @@ ghc-options:
 
 default-extensions:
     - BlockArguments
-    - TypeFamilies
+    - DataKinds
+    - DerivingStrategies
+    - DerivingStrategies
     - FlexibleInstances
+    - FlexibleInstances
+    - GADTs
+    - GeneralizedNewtypeDeriving
     - MultiParamTypeClasses
     - OverloadedStrings
-    - GeneralizedNewtypeDeriving
-    - DerivingStrategies
-    - TypeFamilies
-    - GADTs
-    - DerivingStrategies
     - StandaloneDeriving
-    - DataKinds
-    - FlexibleInstances
+    - TypeFamilies
+    - TypeFamilies
+    - TypeOperators
 
 library:
   source-dirs: ./src
