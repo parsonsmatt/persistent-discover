@@ -4,7 +4,7 @@
 
 ## 0.1.0.6
 
-- Support GHC 9.4
+- Support GHC 9.4 [#7](https://github.com/parsonsmatt/persistent-discover/pull/7)
 
 ## 0.1.0.5
 
