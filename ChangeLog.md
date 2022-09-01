@@ -2,6 +2,10 @@
 
 ## Unreleased changes
 
+## 0.1.0.6
+
+- Support GHC 9.4
+
 ## 0.1.0.5
 
 - Fix a bug where `TemplateHaskell` pragma was not added. [#6](https://github.com/parsonsmatt/persistent-discover/pull/6)
