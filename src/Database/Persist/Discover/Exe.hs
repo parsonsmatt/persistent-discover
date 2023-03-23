@@ -33,6 +33,7 @@
 module Database.Persist.Discover.Exe where
 
 import System.FilePath
+import Control.Monad (guard, filterM)
 import Control.Monad.State
 import Data.String
 import Data.DList (DList(..))
