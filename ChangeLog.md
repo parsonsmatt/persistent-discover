@@ -2,6 +2,10 @@
 
 ## Unreleased changes
 
+## 0.1.0.7
+
+- Support mtl-2.3 [#9](https://github.com/parsonsmatt/persistent-discover/pull/9)
+
 ## 0.1.0.6
 
 - Support GHC 9.4 [#7](https://github.com/parsonsmatt/persistent-discover/pull/7)

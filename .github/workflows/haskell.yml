@@ -12,12 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cabal: ["3.6"]
+        cabal: ["3.10"]
         ghc:
           - "8.10.3"
           - "9.0.1"
           - "9.2.4"
           - "9.4.1"
+          - "9.6.3"
     env:
       CONFIG: "--enable-tests"
     steps:
